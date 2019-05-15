@@ -1,0 +1,24 @@
+---
+- name: Run the playbook tasks
+  hosts: all
+  become: true
+  tasks: 
+    - name: Begin final pathfinder lab 
+      debug:
+        msg: Begin final lab 
+
+    - name: Update apt cache repository
+      apt:
+        update_cache: 
+    
+    - name: Install apache2 apt package
+      apt:
+        name: 
+        state: 
+    
+    - name: Copy index.html into /var/www/html, set the owner and group to www-data
+      copy:
+        src: 
+        dest: 
+        owner: 
+        group: 
